@@ -1,0 +1,87 @@
+<header class="header">
+
+    <a href="/" class="logo"> <i class="fas fa-shopping-basket"></i> {{navbar.logo}} </a>
+
+    <nav class="navbar">
+        <a href="/">{{navbar.pages.home}}</a>
+        <a href="/shop">{{navbar.pages.shop}}</a>
+        <a href="/about">{{navbar.pages.about}}</a>
+        <a href="/review">{{navbar.pages.review}}</a>
+        <a href="/blog">{{navbar.pages.blog}}</a>
+        <a href="/contact">{{navbar.pages.contact}}</a>
+    </nav>
+
+    <div class="icons" style="display: flex; align-items:center">
+
+        <div style="display: flex;">
+            <form action="" method="GET">
+                <input type="text" name="lang" value="eng" style="display: none;">
+                <button type="submit" class="btn">Eng</button>
+            </form>
+
+            <form action="/lang/uz" method="GET">
+                <input type="text" name="lang" value="uz" style="display: none;">
+                <button type="submit" class="btn">Uz</button>
+            </form>
+        </div>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="{{navbar.modals.search}}" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <h3 class="total">{{navbar.modals.total}}<span>56.97</span> </h3>
+        <a href="#" class="btn">{{navbar.modals.checkout}}</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>{{navbar.modals.loginLabel}}</h3>
+        <input type="email" placeholder="{{navbar.modals.emailPleaceholder}}" class="box">
+        <input type="password" placeholder="{{navbar.modals.passwordPleaceholder}}" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">{{navbar.modals.rememberCheck}}</label>
+        </div>
+        <input type="submit" value="{{navbar.modals.loginBtn}}" class="btn">
+        <p>{{navbar.modals.forgetPassword.text}}<a href="#">{{navbar.modals.forgetPassword.link}}</a></p>
+        <p>{{navbar.modals.registerLink.text}}<a href="#">{{navbar.modals.registerLink.link}}</a></p>
+    </form>
+
+</header>

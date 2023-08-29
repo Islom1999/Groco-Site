@@ -1,0 +1,46 @@
+<div class="content">
+    <section class="home">
+
+    <div class="slides-container">
+        {{#if sliders}}
+            {{#each sliders}}
+            <div class="slide {{isActivClass}}">
+            <div class="content">
+                <span>{{title}}</span>
+                <h3>{{discount}}</h3>
+                <a href="#" class="btn">{{../pages.home.btn}}</a>
+            </div>
+            <div class="image">
+                <img src="{{image}}" alt="">
+            </div>
+            </div>
+            {{/each}}
+        {{else}}
+            <h1>Slider hozircha yo'q</h1>
+        {{/if}}
+
+    </div>
+
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+<section class="banner-container">
+    {{#if sliders}}
+        {{#each sliders}}
+        <div class="banner">
+        <img src="{{imageBanner}}" alt="">
+        <div class="content">
+            <span>{{title}}</span>
+            <h3>{{discount}}</h3>
+            <a href="#" class="btn">{{../pages.home.btn}}</a>
+        </div>
+        </div>
+        {{/each}}
+    {{else}}
+        <h1>Malumotlar hozircha yo'q</h1>
+    {{/if}}
+
+</section>
+</div>

@@ -1,0 +1,32 @@
+<div class="heading" style="background-image: url('{{pages.blog.image}}') ;">
+    <h1>{{pages.blog.title}}</h1>
+    <p> <a href="index.html">{{pages.blog.descr}}</a> </p>
+</div>
+
+<section class="blogs">
+
+    <h1 class="title">{{pages.blog.blogs.text1}}<span>{{pages.blog.blogs.text2}}</span> <a href="#">{{pages.blog.blogs.views}}</a> </h1>
+
+    <div class="box-container">
+        {{#if blogs}}
+            {{#each blogs}}
+            <div class="box">
+            <div class="image">
+                <img src="{{image}}" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i>{{created_at}}</a>
+                    <a href="#"> <i class="fas fa-user"></i>{{author}}</a>
+                </div>
+                <h3>{{title}}</h3>
+                <p>{{descr}}</p>
+                <a href="#" class="btn">{{../pages.blog.btn}}</a>
+            </div>
+            </div>
+            {{/each}}
+        {{else}}
+            <h1>Bloglar mavjud emas</h1>
+        {{/if}}
+
+</section>

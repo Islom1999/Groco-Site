@@ -1,0 +1,235 @@
+<div class="heading" style="background-image: url('{{pages.shop.image}}') ;">
+    <h1>{{pages.shop.title}}</h1>
+    <p> <a href="index.html">{{pages.shop.descr}}</a></p>
+</div>
+
+<section class="category">
+
+    <h1 class="title">{{pages.shop.category.text1}}<span>{{pages.shop.category.text2}}</span><a href="#">{{pages.shop.views}}</a> </h1>
+
+    <div class="box-container">
+        {{#if categories}}
+            {{#each categories}}
+            <a href="#" class="box">
+                <img src="{{image}}" alt="">
+                <h3>{{title}}</h3>
+            </a>
+            {{/each}}
+        {{else}}
+            <h1 class="title">Hozircha kategoriyalar mavjud emas</h1>
+        {{/if}}
+
+        <a href="#" class="box">
+            <img src="image/cat-2.png" alt="">
+            <h3>vegetables</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-3.png" alt="">
+            <h3>organic spices</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-4.png" alt="">
+            <h3>fresh meat</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-5.png" alt="">
+            <h3>organic wheat</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="products">
+
+    <h1 class="title"> our <span>{{pages.shop.product.text1}}</span>{{pages.shop.product.text2}}<a href="#">{{pages.shop.views}}</a> </h1>
+
+    <div class="box-container">
+        {{#if products}}
+            {{#each categories}}
+            <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" calass="fas fa-heart"></a>
+                <a href="#" clss="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="{{image}}" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">{{amount}}</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            </div>
+            {{/each}}
+            {{else}}
+            <h1>Hozircha productlar mavjud emas</h1>
+        {{/if}}
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="image/product-8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>organic food</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>

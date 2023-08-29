@@ -1,0 +1,35 @@
+<div class="heading" style="background-image: url('{{pages.review.image}}') ;">
+    <h1>{{pages.review.title}}</h1>
+    <p> <a href="index.html">{{pages.review.descr}}</a></p>
+</div>
+
+<section class="info-container">
+    {{#each pages.review.servis}}
+        <div class="info">
+            <img src="{{image}}" alt="">
+            <div class="content">
+                <h3>{{title}}</h3>
+                <span>{{descr}}</span>
+            </div>
+        </div>
+    {{/each}}
+</section>
+
+<section class="review">
+    {{#if workers}}
+        {{#each workers}}
+        <div class="box">
+        <div class="user">
+            <img src="{{image}}" alt="">
+            <div class="info">
+                <h3>{{fullName}}</h3>
+                <span>work</span>
+            </div>
+        </div>
+        <p>{{descr}}</p>
+        </div>
+        {{/each}}
+    {{else}}
+        <h1>Ishchilar hozircha yo'q</h1>
+    {{/if}}
+</section>

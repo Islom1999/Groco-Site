@@ -1,0 +1,42 @@
+div class="heading" style="background-image: url('{{pages.shop.image}}') ;">
+    <h1>{{pages.about.title}}</h1>
+    <p> <a href="index.html">home >></a>{{pages.about.descr}}</p>
+</div>
+
+<section class="about">
+
+    <div class="image">
+        <img src="{{pages.about.post.image}}" alt="">
+    </div>
+
+    <div class="content">
+        <span>{{pages.about.post.h1}}</span>
+        <h3>{{pages.about.post.h2}}</h3>
+        <p>{{pages.about.post.descr}}</p>
+        <a href="#" class="btn">{{pages.about.post.btn}}</a>
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h1 class="title"> our <span>gallery</span> <a href="#">view all >></a> </h1>
+
+    <div class="box-container">
+        {{#if gallary}}
+            {{#each gallary}}
+            <div class="box">
+            <img src="image/gallery-img-1.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+            </div>
+            {{/each}}
+        {{else}}
+            <h1>hozircha gallary yo'q</h1>
+        {{/if}}
+
+
+    </div>   

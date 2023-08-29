@@ -1,0 +1,55 @@
+
+<div class="heading" style= "background-image: url('{{pages.contact.image}}') ;">
+    <h1>{{pages.contact.title}}</h1>
+    <p> <a href="index.html">{{pages.contact.descr}}</a> </p>
+</div>
+
+<section class="contact">
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>{{pages.contact.contactUs.number.title}}</h3>
+            <p>{{pages.contact.contactUs.number.phone1}}</p>
+            <p>{{pages.contact.contactUs.number.phone2}}</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>{{pages.contact.contactUs.email.title}}</h3>
+            <p>{{pages.contact.contactUs.email.email1}}</p>
+            <p>{{pages.contact.contactUs.email.email2}}</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>{{pages.contact.contactUs.adress.title}}</h3>
+            <p>{{pages.contact.contactUs.adress.adress1}}</p>
+            <p>{{pages.contact.contactUs.adress.adress2}}</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="">
+            <h3>{{pages.contact.form.title}}</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="{{pages.contact.form.name}}" class="box">
+                <input type="email" placeholder="{{pages.contact.form.email}}" class="box">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="{{pages.contact.form.number}}" class="box">
+                <input type="text" placeholder="{{pages.contact.form.subject}}" class="box">
+            </div>
+            <textarea placeholder="{{pages.contact.form.message}}" cols="30" rows="10"></textarea>
+            <input type="submit" value="{{pages.contact.form.btn}}" class="btn">
+        </form>
+
+        <iframe class="map" src="{{pages.contact.form.map}}" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+</section>
+
